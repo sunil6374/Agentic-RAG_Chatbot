@@ -9,6 +9,7 @@ langgraph
 langchain
 langchain-core
 langchain-community
+langchain-google-genai
 
 # LLM Providers (we'll use these later)
 langchain-groq
