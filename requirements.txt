@@ -16,7 +16,7 @@ langchain-ollama
 langchain-openai
 # Vector Stores & Embeddings
 faiss-cpu
-sentence-transformers
+
 
 # Utilities
 python-dotenv
