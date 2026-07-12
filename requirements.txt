@@ -13,7 +13,6 @@ langchain-google-genai
 
 # LLM Providers (we'll use these later)
 langchain-groq
-langchain-ollama
 langchain-openai
 # Vector Stores & Embeddings
 faiss-cpu
