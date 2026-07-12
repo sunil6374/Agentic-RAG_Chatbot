@@ -37,8 +37,9 @@ documents = splitter.split_documents(docs)
 # Embeddings + Vector Store
 # ----------------------------------------------------
 
-embeddings = OllamaEmbeddings(
-    model="nomic-embed-text"
+embeddings = GoogleGenerativeAIEmbeddings(
+    model="models/embedding-001",
+    google_api_key=st.secrets["GOOGLE_API_KEY"]
 )
 
 vectorstore = FAISS.from_documents(
