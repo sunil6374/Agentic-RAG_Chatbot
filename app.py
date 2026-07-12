@@ -147,6 +147,7 @@ graph = builder.compile()
 
 import streamlit as st
 from langchain_groq import ChatGroq
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 st.title("📄 Agentic RAG")
 
