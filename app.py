@@ -1,6 +1,5 @@
 import streamlit as st
 from langchain_groq import ChatGroq
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from typing import Annotated
 
 from langchain_ollama import ChatOllama, OllamaEmbeddings
@@ -40,10 +39,7 @@ documents = splitter.split_documents(docs)
 # Embeddings + Vector Store
 # ----------------------------------------------------
 
-embeddings = GoogleGenerativeAIEmbeddings(
-    model="models/embedding-001",
-    google_api_key=st.secrets["GOOGLE_API_KEY"]
-)
+embeddings = OllamaEmbeddings(model='nomic-embed-text:latest')
 
 vectorstore = FAISS.from_documents(
     documents,
