@@ -1,3 +1,6 @@
+import streamlit as st
+from langchain_groq import ChatGroq
+from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from typing import Annotated
 
 from langchain_ollama import ChatOllama, OllamaEmbeddings
@@ -144,10 +147,6 @@ graph = builder.compile()
 # ----------------------------------------------------
 # Run
 # ----------------------------------------------------
-
-import streamlit as st
-from langchain_groq import ChatGroq
-from langchain_google_genai import GoogleGenerativeAIEmbeddings
 
 st.title("📄 Agentic RAG")
 
