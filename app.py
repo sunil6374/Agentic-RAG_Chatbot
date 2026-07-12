@@ -75,7 +75,8 @@ tools = [retrieve]
 # ----------------------------------------------------
 
 llm = ChatOllama(
-    model="llama3.2:latest",
+    model="llama-3.3-70b-versatile",
+    api_key=st.secrets["GROQ_API_KEY"],
     temperature=0
 )
 
@@ -144,6 +145,7 @@ graph = builder.compile()
 # ----------------------------------------------------
 
 import streamlit as st
+from langchain_groq import ChatGroq
 
 st.title("📄 Agentic RAG")
 
