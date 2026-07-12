@@ -1,0 +1,35 @@
+# Jupyter
+ipykernel
+notebook
+
+# LangGraph
+langgraph
+
+# LangChain
+langchain
+langchain-core
+langchain-community
+
+# LLM Providers (we'll use these later)
+langchain-groq
+langchain-ollama
+langchain-openai
+# Vector Stores & Embeddings
+faiss-cpu
+sentence-transformers
+
+# Utilities
+python-dotenv
+pydantic
+
+# Data Handling
+pandas
+numpy
+pypdf
+
+# Notebook Progress Bars
+ipywidgets
+typing_extensions
+
+# Streamlit
+streamlit
