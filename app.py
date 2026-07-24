@@ -18,6 +18,9 @@ from langgraph.graph.message import add_messages
 from langgraph.prebuilt import ToolNode, tools_condition
 
 from typing_extensions import TypedDict
+from langchain_cohere import CohereEmbeddings
+
+
 
 
 # ----------------------------------------------------
@@ -40,7 +43,8 @@ documents = splitter.split_documents(docs)
 # Embeddings + Vector Store
 # ----------------------------------------------------
 
-embeddings = OllamaEmbeddings(model='nomic-embed-text:latest')
+embeddings = embeddings = CohereEmbeddings(
+    model="embed-v4.0")
 
 vectorstore = FAISS.from_documents(
     documents,
