@@ -1,4 +1,4 @@
-%pip install -U langchain-ollama
+pip install -U langchain-ollama
 import streamlit as st
 from langchain_groq import ChatGroq
 from typing import Annotated
